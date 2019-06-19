@@ -93,7 +93,7 @@ This to avoid the risk of global styles conflicting with any pre-existing global
 
 Hovever, we do include some global styles in the [GOV.UK Prototype Kit](https://github.com/alphagov/govuk-prototype-kit-private-beta) to speed up prototyping.
 
-These [global styles](../../src/core/_global-styles.scss) are are not included by default in GOV.UK Frontend. To include these global styles in your app, you can set `$govuk-global-styles` variable to `true` before importing GOV.UK Frontend styles into your app:
+These [global styles](../../src/govuk/core/_global-styles.scss) are are not included by default in GOV.UK Frontend. To include these global styles in your app, you can set `$govuk-global-styles` variable to `true` before importing GOV.UK Frontend styles into your app:
 
 ```SCSS
 // application.scss
@@ -172,7 +172,7 @@ if ($radio) {
 }
 ```
 
-Some components such as the details or button components are initialised globally. If you want to see how these are initialised by default, see the [all.js](../../src/all.js) file.
+Some components such as the details or button components are initialised globally. If you want to see how these are initialised by default, see the [all.js](../../src/govuk/all.js) file.
 
 ### Option 2: Import JavaScript
 
@@ -222,7 +222,7 @@ if ($radio) {
 }
 ```
 
-Some components such as the details or button components are initialised globally. If you want to see how these are initialised by default, see the [all.js](../../src/all.js) file.
+Some components such as the details or button components are initialised globally. If you want to see how these are initialised by default, see the [all.js](../../src/govuk/all.js) file.
 
 ### Polyfills
 A JavaScript polyfill provides functionality on older browsers or assistive technology that do not natively support it.
@@ -283,7 +283,7 @@ To use different asset paths, also complete the below step(s).
   @import "govuk-frontend/all";
   ```
 
-2. Optional: You can also override the helpers used to generate the asset urls, for example if you are using sass-rails' asset-pipeline functionality. You can do this by setting `$govuk-image-url-function` to the name of the function(s) you wish to use. See `src/settings/_assets.scss` for more information and examples.
+2. Optional: You can also override the helpers used to generate the asset urls, for example if you are using sass-rails' asset-pipeline functionality. You can do this by setting `$govuk-image-url-function` to the name of the function(s) you wish to use. See `src/govuk/settings/_assets.scss` for more information and examples.
 
 ## Include CSS and JavaScript
 
